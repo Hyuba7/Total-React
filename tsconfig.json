@@ -4,7 +4,6 @@
     "jsx":"react",
     "watch": true,
     "target": "es5",
-    "lib": ["es6","DOM"],
-    
+    "lib": ["es6","DOM"]
   }
 }
