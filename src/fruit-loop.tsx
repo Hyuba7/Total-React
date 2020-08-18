@@ -1,21 +1,23 @@
 import React from 'react';
-import {render} from 'react-dom'
+import { render } from 'react-dom';
 
-function FruitLopps() {
-  let fruit:Array<string> = [
-    "red",
-    "blue",
-    "yellow",
-    "green"
-  ]
+type FruitLoopsProps = {
+  fruit:Array<string>
+}
 
-return (
-  <ul>
-    {fruit.map((value,index) => {
-      return
-    }
-    )}
-  </ul>
-)
+function FruitLopps(props: FruitLoopsProps) {
+  
 
+  return (
+    <ul>
+      {props.fruit.map((value, index) => {
+        
+        return <li key={index} style={{color:value}}>{value}</li>;
+      })}
+    </ul>
+  );
+}
+
+export {
+  FruitLopps
 }
